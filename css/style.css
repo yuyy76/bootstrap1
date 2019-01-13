@@ -14,3 +14,41 @@ body{
 @media (min-width:1200px) {
 
 }
+
+/* 导航条 */
+.navbar-default{ 
+    background-color: #767a76;
+    border: 0;
+}
+.navbar{
+    border-radius: 0;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #f3f3f3;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+{
+    color: #cc6f65;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #cc6f65;
+    background-color: transparent;
+}
+
+
+/* 网站公告栏 */
+
+.linebox {
+    border: 1px solid #e3e3e3;
+    border-top: 3px solid #474747;
+}
+.linebox h4 {
+    /* border-bottom: 3px solid #cccccc; */
+
+}
