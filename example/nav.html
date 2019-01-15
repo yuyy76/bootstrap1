@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#res-nav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><strong>51rgb.cn</strong></a>
+                </div>
+         
+           
+                  <div class="collapse navbar-collapse" id="res-nav">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">视频</a></li>
+                        <li><a href="#">课程</a></li>
+                        <li><a href="#">下载</a></li>
+                                 </ul>
+                      <form action="" class="navbar-form navbar-left">
+                          <input type="text" placeholder="输入搜索内容" class="form-control">
+                          <button type="submit">
+                              <span class="glyphicon glyphicon-search"></span>
+                          </button>
+                      </form>
+                      <!-- <a href="#" class="btn navbar-btn btn-primary btn-sm navbar-right hidden-xs">报名课程</a> -->
+                      <div class="navbar-right">
+                          <ul class="nav navbar-nav">
+                              <li><a href="#">注册</a></li>
+                              <li><a href="#" data-toggle="modal" data-target="#login">登录</a></li>
+                          </ul>
+                          <p class="navbar-text">您好,<a href="#" class="navbar-link">万晨曦</a></p>
+                      </div>
+                  </div>
+   
+        </div>
+    </nav>
+   
+ 
+       <div class="carousel" id="lbt" data-interval="1000" data-pause="false">
+          <div class="carousel-inner">
+               <div class="item active">
+                   <img src="images/001.jpg" alt="">
+                   <div class="carousel-caption">
+                       <h2>好厉害</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam sint voluptatem </p>
+                   </div>
+               </div>
+                <div class="item">
+                   <img src="images/002.jpg" alt="">
+               </div>
+               <div class="item">
+                   <img src="images/003.jpg" alt="">
+               </div>
+           </div>
+           <a href="#lbt" data-slide="prev" class="left carousel-control">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           <a href="#lbt" data-slide="next" class="right carousel-control">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+           </a>
+           <ul class="carousel-indicators">
+               <li data-target="#lbt" data-slide-to="0" class="active"></li>
+               <li data-target="#lbt" data-slide-to="1"></li>
+               <li data-target="#lbt" data-slide-to="2"></li>
+           </ul>
+       </div>
+       <div class="text-center">
+           <div class="btn-group" style="padding:20px">
+               <button class="btn btn-default prev-btn">
+                   <span class="glyphicon glyphicon-backward"></span>
+               </button>
+               <button class="btn btn-default play-btn">
+                   <span class="glyphicon glyphicon-play"></span>
+               </button>
+               <button class="btn btn-default next-btn">
+                   <span class="glyphicon glyphicon-forward"></span>
+               </button>
+           </div>
+       </div>
+  
+     
+       <div class="modal " id="login" tabindex="-1">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                            
+                          </div>
+                      </div>
+                  </div>
+
+    
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/myself.js"></script>
+   
+   <script>
+        $(function(){
+            $('#login').modal({
+                show:false,
+                backdrop:false,
+                remote:'login-form.html'
+            });
+        });
+    
+    </script>
+   
+   
+</body>
+</html>
